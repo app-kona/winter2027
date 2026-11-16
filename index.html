@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>冬季限定プラン｜KONA RESORT（AWAJI KAI・KONA OCEAN CLUB・Dog Villa Holoholo）</title>
+<meta name="description" content="淡路島の一棟貸しヴィラ KONA RESORT の冬季限定プラン。2027年1月4日〜2月26日の月〜木曜チェックイン。AWAJI KAI と KONA OCEAN CLUB はチェックアウト翌日15時の最大24時間、Dog Villa Holoholo は1泊分の料金で2泊。">
+<meta name="robots" content="noindex"><!-- 公開時に判断（広告専用なら残す） -->
+<meta property="og:title" content="冬季限定プラン｜KONA RESORT">
+<meta property="og:description" content="冬の平日だけ、ゆっくり長く。AWAJI KAI・KONA OCEAN CLUB は最大24時間、Dog Villa Holoholo は1泊分の料金で2泊。">
+<meta property="og:image" content="images/hero-dusk.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!--
+  KONA RESORT 冬季限定プランLP  v3 KONA全体（2026-11-13）
+  v3：AWAJI KAI 単独のLP（v2）を、KONA RESORT 全体（AWAJI KAI・KONA OCEAN CLUB・Dog Villa Holoholo）の冬プランLPに拡張
+    - AWAJI KAI・KONA OCEAN CLUB は「24 HOURS」（翌日15時アウト）、Holoholo は「2 NIGHTS」（2泊目0円・翌々日11時アウト）と表記を分ける
+    - デザインに冬の暖かさを加える（LPの中だけの調整。デザインシステム本体は変えない）
+  プラン：489ban「冬季限定プラン」
+    - AWAJI KAI  detail/1358095
+    - KONA OCEAN CLUB  BEACH 1365139／SUNSET 1365136／COVE 1365137／OCEAN 1365138
+    - Dog Villa Holoholo  detail/1379246（冬季限定プラン　2泊目無料プラン）
+  デザイン：KONA RESORT マスター＋AWAJI KAI 派生デザインシステム ＋ 冬の暖色レイヤー（このLPのみ）
+    - 重心＝深海ネイビー #12376B（海の色は変えない）
+    - 地をあたたかいアイボリー #F5EEE3／#FFFCF7 に寄せ、墨も暖色寄り #2A2421 に
+    - 冬の差し色＝焚き火のアンバー #B8673A（小見出し・印・バッジなど小さな所だけ。面には使わない）
+    - 紺の帯には、下から灯りがさすような暖色のにじみを重ねる
+    - 金 #C69A5B は予約ボタンだけ（1画面1回）は v2 のまま
+  掲載前に確認が必要な箇所には data-verify 属性を付けている
+  表現ルール（秋冬LP_折衷案_コピー清書_v2.md §5）：
+    - プールは「加温設備のないプール」と事実だけ書く（「冬季は加温していません」「あえて」は使わない）
+    - 飲酒後のサウナ・プール・ジャグジーを勧めない／20歳未満の飲酒禁止を併記
+    - 気候の数値は「平年値」と出典を書く／夕陽は「晴れた日には」
+    - AWAJI KAI・KONA OCEAN CLUB は通常料金と同額のため「割引」「◯%OFF」とは書かない（Holoholo は2泊目0円をそのまま書く）
+-->
+<style>
+:root{
+  --aqua:#A4CFC6; --steel:#628FB0; --ocean:#016098;
+  --navy:#12376B; --navy-deep:#0C2A54;
+  /* 冬の暖色レイヤー（このLPのみ） */
+  --ink:#2A2421; --body:#3A332E; --muted:#6E645B;
+  --on-dark:#F7F2EC; --on-dark-soft:rgba(247,242,236,.82);
+  --ivory:#F5EEE3; --white:#FFFCF7;
+  --line:#E3D8CA; --line-ivory:#E3D6C4; --line-dark:rgba(255,236,214,.22);
+  --ember:#B8673A; --ember-lt:#E2A878; --ember-wash:#F1E2D2;
+  --glow:radial-gradient(120% 70% at 50% 115%,rgba(214,128,66,.30) 0%,rgba(214,128,66,.10) 38%,rgba(214,128,66,0) 62%);
+  --gold:#C69A5B; --gold-lt:#D8AD6A;
+  --f-display:'Jost','Poppins','Zen Kaku Gothic New',sans-serif;
+  --f-jp:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --f-mincho:'Shippori Mincho','Noto Serif JP',serif;
+  --f-body:Inter,'Noto Sans JP',sans-serif;
+  --ease:.4s ease;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-body);font-size:16px;line-height:1.9;letter-spacing:.02em;color:var(--body);background:var(--ivory);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--f-display);font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--ember);line-height:1}
+.on-dark .eyebrow{color:var(--ember-lt)}
+.h2{font-family:var(--f-jp);font-weight:700;font-size:clamp(26px,3.6vw,36px);line-height:1.45;color:var(--ink);margin-top:18px}
+.on-dark .h2{color:var(--on-dark)}
+.lead{font-size:clamp(15px,1.6vw,17px);line-height:1.95;margin-top:20px;max-width:700px}
+.sec{padding:clamp(72px,10vw,120px) 0}
+.sec-white{background:var(--white)}
+.sec-ivory{background:var(--ivory)}
+.sec-navy{background:var(--glow),var(--navy);color:var(--on-dark-soft)}
+.note{font-size:13px;line-height:1.8;color:var(--muted);margin-top:16px}
+.on-dark .note{color:var(--on-dark-soft)}
+.notes{list-style:none;margin-top:28px}
+.notes li{font-size:13px;line-height:1.8;color:var(--muted);padding-left:1em;text-indent:-1em}
+.notes li::before{content:"※"}
+.nw{white-space:nowrap}
+.brand{font-family:var(--f-display);font-weight:500;letter-spacing:.06em}
+
+/* ボタン */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:15px 32px;border-radius:9999px;font-family:var(--f-display);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background var(--ease),color var(--ease),border-color var(--ease)}
+.btn-gold{background:var(--gold);color:var(--navy);min-width:240px}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-line-light{border:1px solid #fff;color:#fff}
+.btn-line-light:hover{background:rgba(255,255,255,.14)}
+.btn-light{background:var(--white);color:var(--navy)}
+.btn-light:hover{background:var(--ember-wash)}
+.btn .jp{font-family:var(--f-jp);font-weight:700;letter-spacing:.08em;text-transform:none;font-size:15px}
+.btn-sm{min-height:42px;padding:9px 20px}
+.btn-sm .jp{font-size:13px}
+
+/* ヘッダー */
+.nav{position:fixed;inset:0 0 auto 0;height:72px;z-index:50;display:flex;align-items:center;transition:background var(--ease)}
+.nav .wrap{width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:40px;width:auto}
+.nav.scrolled{background:rgba(18,55,107,.94)}
+.nav a.btn{min-height:40px;padding:9px 22px}
+.nav a.btn .jp{font-size:13px}
+
+/* ヒーロー */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy-deep)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,42,84,.38) 0%,rgba(12,42,84,0) 28%,rgba(40,30,40,0) 45%,rgba(44,30,34,.55) 78%,rgba(30,26,40,.8) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:110px;padding-bottom:clamp(48px,8vh,88px);display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:end}
+.hero .eyebrow{color:#fff;opacity:.92}
+.hero .pre{font-family:var(--f-jp);font-weight:500;font-size:clamp(13px,1.4vw,15px);letter-spacing:.08em;margin-top:18px;line-height:1.8}
+.hero h1{margin-top:14px;text-shadow:0 1px 18px rgba(0,0,0,.25)}
+.hero .h1-jp{display:block;font-family:var(--f-jp);font-weight:900;font-size:clamp(30px,4.4vw,52px);line-height:1.4;letter-spacing:.04em}
+.figs{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px clamp(22px,4vw,48px);margin-top:22px}
+.figs .f{display:block}
+.figs .num{display:block;font-family:var(--f-display);font-weight:500;font-size:clamp(66px,9vw,120px);line-height:.92;letter-spacing:.02em}
+.figs .num small{font-size:.26em;letter-spacing:.22em;margin-left:.3em}
+.figs .who{display:block;font-family:var(--f-jp);font-weight:500;font-size:12px;letter-spacing:.06em;line-height:1.6;margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.45)}
+.figs .who b{font-weight:700;color:var(--ember-lt)}
+.figs .sep{display:block;width:1px;align-self:stretch;background:rgba(255,255,255,.35)}
+.hero .sub{font-size:clamp(14px,1.6vw,17px);margin-top:24px;max-width:560px;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+br.sp{display:none}
+.hero .credit{position:absolute;right:16px;bottom:10px;z-index:1;font-size:11px;opacity:.7}
+
+/* 予約カード（ヒーロー内） */
+.card{background:rgba(22,34,62,.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--line-dark);padding:28px 28px 24px;color:var(--on-dark)}
+.card .k{font-family:var(--f-display);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ember-lt)}
+.card .name{font-family:var(--f-jp);font-weight:700;font-size:20px;margin-top:10px;line-height:1.5}
+.card .price{display:flex;align-items:baseline;gap:6px;margin-top:14px;font-family:var(--f-display);font-weight:500;letter-spacing:.02em}
+.card .price b{font-size:40px;font-weight:500;line-height:1}
+.card .price span{font-family:var(--f-jp);font-size:13px;color:var(--on-dark-soft)}
+.card .per{font-size:12px;color:var(--on-dark-soft);margin-top:6px;line-height:1.7}
+.card ul{list-style:none;margin-top:16px;border-top:1px solid var(--line-dark);padding-top:14px}
+.card li{font-size:14px;line-height:1.75;padding-left:18px;position:relative}
+.card li+li{margin-top:6px}
+.card li::before{content:"";position:absolute;left:2px;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--ember-lt)}
+.card .btn{width:100%;margin-top:20px}
+.card .days{font-size:12px;color:var(--on-dark-soft);margin-top:12px;line-height:1.7}
+
+/* 特典 */
+.perk{margin-top:56px}
+.perk + .perk{margin-top:40px}
+.perk-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;padding-bottom:16px;border-bottom:1px solid var(--line-ivory)}
+.perk-head .tag{font-family:var(--f-display);font-weight:500;font-size:13px;letter-spacing:.2em;color:#fff;background:var(--ember);padding:4px 14px;border-radius:9999px;line-height:1.6}
+.perk-head h3{font-family:var(--f-jp);font-weight:700;font-size:19px;color:var(--ink);line-height:1.5}
+.inc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-ivory);border:1px solid var(--line-ivory);margin-top:24px}
+.inc.three{grid-template-columns:repeat(3,1fr)}
+.inc-item{background:var(--white);padding:34px 26px 30px}
+.inc-item .no{font-family:var(--f-display);font-weight:300;font-size:13px;letter-spacing:.2em;color:var(--ember)}
+.inc-item .big{font-family:var(--f-display);font-weight:500;font-size:38px;letter-spacing:.02em;color:var(--navy);line-height:1;margin-top:18px}
+.inc-item .big small{font-size:15px;margin-left:4px}
+.inc-item h3{font-family:var(--f-jp);font-weight:700;font-size:19px;color:var(--ink);line-height:1.5;margin-top:16px}
+.inc-item p{font-size:14px;margin-top:8px;line-height:1.8}
+.inc-item.lead-item{background:var(--glow),var(--navy);color:var(--on-dark-soft)}
+.inc-item.lead-item .no{color:var(--ember-lt)}
+.inc-item.lead-item .big,.inc-item.lead-item h3{color:var(--on-dark)}
+.same{margin-top:20px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;padding:4px 0}
+.same .tag{font-family:var(--f-jp);font-weight:700;font-size:14px;color:var(--navy);border:1px solid var(--navy);border-radius:9999px;padding:6px 16px;white-space:nowrap}
+.same p{font-size:15px;color:var(--ink)}
+
+/* コンセプト帯 */
+.concept-band{background:var(--glow),var(--navy-deep);color:var(--on-dark);text-align:center;padding:clamp(88px,12vw,140px) 0}
+.concept-band .jp{font-family:var(--f-mincho);font-weight:500;font-size:clamp(20px,2.6vw,28px);letter-spacing:.08em;margin-top:28px;line-height:1.8}
+.concept-band p.s{font-size:15px;color:var(--on-dark-soft);margin-top:18px;line-height:1.9}
+.concept-band .eyebrow{color:var(--ember-lt)}
+.concept-band .jp-lg{font-size:clamp(28px,4.6vw,48px);margin-top:22px;line-height:1.6}
+
+/* 過ごし方 */
+/* 過ごし方の2枠：24時間＝海の寒色／Holoholo＝薪ストーブの暖色 */
+.daypane{margin-top:56px;padding:clamp(28px,4vw,48px) clamp(20px,4vw,48px) clamp(12px,2vw,24px);border-top:3px solid var(--navy)}
+.daypane.sea{background:#E9EFF2}
+.daypane.hearth{background:#F2E4D3;border-top-color:var(--ember)}
+.daypane .day-title{margin-top:0}
+.daypane.sea .day-title{border-bottom-color:#CCD8DF}
+.daypane.sea .day-title .tag{background:var(--navy)}
+.daypane.hearth .day-title{border-bottom-color:#E0CBB3}
+.daypane.sea .timeline{border-left-color:#C3D1DA}
+.daypane.hearth .timeline{border-left-color:#DCC4A8}
+.daypane.hearth .timeline li.extra{background:var(--white)}
+.day-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-top:64px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.day-title .tag{font-family:var(--f-display);font-weight:500;font-size:13px;letter-spacing:.2em;color:#fff;background:var(--ember);padding:4px 14px;border-radius:9999px;line-height:1.6}
+.day-title h3{font-family:var(--f-jp);font-weight:700;font-size:20px;color:var(--ink);line-height:1.5}
+.day{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,6vw,80px);align-items:start;margin-top:36px}
+.day-photos{display:grid;gap:16px;position:sticky;top:96px}
+.day-photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.day-photos figcaption{font-size:11px;color:var(--muted);margin-top:6px}
+.timeline{list-style:none;border-left:1px solid var(--line)}
+.timeline li{position:relative;padding:0 0 30px 30px}
+.timeline li::before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--white);border:1px solid var(--ember)}
+.timeline li.key::before{background:var(--navy);border-color:var(--navy)}
+.timeline .t{font-family:var(--f-display);font-weight:500;font-size:14px;letter-spacing:.14em;color:var(--ember)}
+.timeline li.key .t{color:var(--navy)}
+.timeline h3{font-family:var(--f-jp);font-weight:700;font-size:18px;color:var(--ink);line-height:1.55;margin-top:2px}
+.timeline p{font-size:14px;margin-top:4px;line-height:1.85}
+.timeline li.extra{background:var(--ember-wash);margin-left:-1px;border-left:2px solid var(--ember);padding-top:18px;padding-bottom:20px}
+.timeline li.extra::before{top:27px;left:-6px;background:var(--ember);border-color:var(--ember)}
+.timeline .badge{display:inline-block;font-family:var(--f-jp);font-weight:700;font-size:11px;letter-spacing:.08em;color:#fff;background:var(--ember);padding:2px 10px;margin-left:8px;vertical-align:2px}
+
+/* 冬の淡路 */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:56px}
+.fact .num{font-family:var(--f-display);font-weight:500;font-size:clamp(40px,4.4vw,52px);line-height:1;color:var(--navy);letter-spacing:.02em}
+.fact .num small{font-size:.42em;margin-left:2px}
+.fact h3{font-family:var(--f-jp);font-weight:700;font-size:17px;color:var(--ink);margin-top:16px;line-height:1.5}
+.fact p{font-size:14px;margin-top:6px;line-height:1.8}
+
+/* 棟 */
+.group{margin-top:72px}
+.group:first-of-type{margin-top:56px}
+.group-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;padding-bottom:16px;border-bottom:1px solid var(--line-dark)}
+.group-head .gname{font-family:var(--f-display);font-weight:500;font-size:clamp(22px,2.6vw,28px);letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark);line-height:1.2}
+.group-head .gmeta{font-size:13px;color:var(--on-dark-soft)}
+.group-head .gmeta b{font-family:var(--f-display);font-weight:500;letter-spacing:.14em;color:var(--ember-lt);margin-right:10px}
+.villas{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:32px}
+.villas.four{grid-template-columns:repeat(4,1fr);gap:24px}
+.villa img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.villa .name{font-family:var(--f-display);font-weight:500;font-size:24px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-dark);margin-top:20px;line-height:1.2}
+.villa .cap{font-size:13px;color:var(--on-dark-soft);margin-top:6px}
+.villa .vprice{font-family:var(--f-display);font-weight:500;font-size:26px;color:var(--on-dark);margin-top:14px;letter-spacing:.02em;line-height:1.2}
+.villa .vprice span{font-family:var(--f-jp);font-size:13px;color:var(--on-dark-soft);font-weight:400;margin-left:4px}
+.villa .vper{font-size:12px;color:var(--on-dark-soft)}
+.villa dl{margin-top:14px;font-size:14px;line-height:1.85;border-top:1px solid var(--line-dark);padding-top:12px}
+.villa dt{float:left;clear:left;width:5em;color:var(--ember-lt)}
+.villa dd{margin-left:5em}
+.villa .vlink{display:inline-block;margin-top:14px;font-family:var(--f-jp);font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--on-dark);text-decoration:none;border-bottom:1px solid var(--ember-lt);padding-bottom:2px}
+.villa .vlink:hover{color:var(--ember-lt)}
+.villa-wide{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,56px);align-items:start;margin-top:32px}
+.villa-wide .pics{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.villa-wide .pics img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.villa-wide .pics .p1{aspect-ratio:4/3}
+.villa-wide .pics .col{display:grid;gap:12px;grid-template-rows:1fr 1fr}
+.villa-wide .villa .name{margin-top:0}
+
+/* 食事 */
+.meal{background:var(--ivory);border:1px solid var(--line-ivory);padding:32px 30px}
+.meal .k{font-family:var(--f-display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember)}
+.meal h3{font-family:var(--f-jp);font-weight:700;font-size:20px;color:var(--ink);margin-top:10px;line-height:1.5}
+.meal p{font-size:14px;margin-top:8px;line-height:1.85}
+.nabe{display:grid;grid-template-columns:7fr 5fr;gap:clamp(28px,5vw,64px);align-items:center;margin-top:48px}
+.nabe img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.nabe figcaption{font-size:11px;color:var(--muted);margin-top:6px}
+.nabe .k{font-family:var(--f-display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember)}
+.nabe h3{font-family:var(--f-jp);font-weight:700;font-size:22px;color:var(--ink);margin-top:10px;line-height:1.5}
+.kit{list-style:none;margin-top:16px;border-top:1px solid var(--line-ivory)}
+.kit li{font-size:15px;color:var(--ink);padding:12px 0 12px 22px;border-bottom:1px solid var(--line-ivory);position:relative}
+.kit li::before{content:"";position:absolute;left:4px;top:1.25em;width:7px;height:7px;border-radius:50%;background:var(--ember)}
+.meal-sub{margin-top:40px}
+
+/* 条件 */
+.callout{margin-top:48px;background:var(--white);border:1px solid var(--navy);padding:28px 30px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+.callout + .callout{margin-top:16px;border-color:var(--ember)}
+.callout + .callout .ic{background:var(--ember)}
+.callout .ic{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--f-jp);font-weight:700;font-size:20px}
+.callout h3{font-family:var(--f-jp);font-weight:700;font-size:18px;color:var(--ink);line-height:1.55}
+.callout p{font-size:15px;margin-top:6px}
+table.cond{width:100%;border-collapse:collapse;margin-top:36px;background:var(--white);table-layout:fixed}
+table.cond th,table.cond td{border-bottom:1px solid var(--line-ivory);padding:18px 20px;text-align:left;vertical-align:top;font-size:15px;line-height:1.8}
+table.cond th{width:30%;font-family:var(--f-jp);font-weight:700;color:var(--ink);background:#FAF4EC}
+table.cond tr:first-child th,table.cond tr:first-child td{border-top:1px solid var(--line-ivory)}
+table.cond small{display:block;font-size:13px;color:var(--muted)}
+table.cond .lbl{display:block;font-family:var(--f-jp);font-weight:700;font-size:13px;color:var(--ember);margin-top:10px}
+table.cond .lbl:first-child{margin-top:0}
+.subhead{font-family:var(--f-jp);font-weight:700;font-size:18px;color:var(--ink);margin-top:48px}
+
+/* FAQ */
+.faq{margin-top:48px;border-top:1px solid var(--line-ivory)}
+.faq details{border-bottom:1px solid var(--line-ivory)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-family:var(--f-jp);font-weight:700;font-size:17px;color:var(--ink);line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:10px;height:10px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform var(--ease)}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .a{padding:0 0 24px;font-size:15px;max-width:820px}
+
+/* 予約（締め） */
+.final{position:relative;color:#fff;overflow:hidden;background:var(--navy-deep)}
+.final > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.final::after{content:"";position:absolute;inset:0;background:var(--glow)}
+.final .wrap{position:relative;z-index:1;padding-top:clamp(96px,12vw,140px);padding-bottom:clamp(96px,12vw,140px)}
+.final .head{text-align:center}
+.final .eyebrow{color:#fff;opacity:.9}
+.final h2{font-family:var(--f-jp);font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.5;margin-top:18px}
+.final .meta{font-size:15px;margin-top:16px;opacity:.92}
+.rsv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.rsv-item{background:rgba(22,34,62,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line-dark);padding:28px 24px 26px;display:flex;flex-direction:column}
+.rsv-item .rk{font-family:var(--f-display);font-weight:500;font-size:13px;letter-spacing:.2em;color:var(--ember-lt)}
+.rsv-item .rn{font-family:var(--f-display);font-weight:500;font-size:20px;letter-spacing:.06em;text-transform:uppercase;margin-top:8px;line-height:1.3}
+.rsv-item .rp{font-size:14px;color:var(--on-dark-soft);margin-top:10px;line-height:1.8}
+.rsv-item .rbtns{display:grid;gap:10px;margin-top:auto;padding-top:20px}
+.rsv-item .rbtns.two{grid-template-columns:1fr 1fr}
+.rsv-item .btn{width:100%;min-width:0;padding-left:12px;padding-right:12px}
+.final .note{color:rgba(255,255,255,.8);text-align:center}
+
+footer{background:var(--glow),var(--navy);color:var(--on-dark-soft);font-size:13px;padding:64px 0 120px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
+footer img{height:56px;width:auto}
+footer .addr{line-height:1.9}
+footer .addr b{font-family:var(--f-display);font-weight:500;letter-spacing:.08em;color:var(--on-dark)}
+footer a{text-decoration:none;border-bottom:1px solid var(--line-dark)}
+footer a:hover{border-color:var(--ember-lt)}
+footer .copy{width:100%;font-size:11px;margin-top:20px;line-height:1.8}
+
+/* スマホ固定CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(22,34,62,.96);border-top:1px solid var(--line-dark);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;justify-content:space-between;gap:12px;color:#fff;transform:translateY(110%);transition:transform var(--ease)}
+.sticky.show{transform:none}
+.sticky .sp-l{font-size:11px;line-height:1.4;color:var(--on-dark-soft)}
+.sticky .sp-l b{display:block;font-family:var(--f-display);font-weight:500;font-size:20px;color:#fff;letter-spacing:.02em}
+.sticky .btn{min-height:46px;min-width:0;padding:10px 24px}
+
+/* 出現（ふわっと） */
+.rise{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}}
+
+@media (max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:32px}
+  .card{max-width:460px}
+  .inc{grid-template-columns:1fr 1fr}
+  .inc.three{grid-template-columns:1fr 1fr 1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .villas,.villas.four{grid-template-columns:1fr 1fr}
+  .villa-wide{grid-template-columns:1fr}
+  .rsv{grid-template-columns:1fr}
+}
+@media (max-width:767px){
+  .nav-logo img{height:32px}
+  br.sp{display:inline}
+  .hero{min-height:auto}
+  .hero img.bg{object-position:50% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(12,42,84,.6) 0%,rgba(30,30,50,.42) 45%,rgba(30,26,40,.85) 100%)}
+  .hero .wrap{padding-top:120px}
+  .figs{gap:14px 18px}
+  .figs .sep{display:none}
+  .card{max-width:none;padding:24px 20px 20px}
+  .card .price{flex-wrap:wrap}
+  .card .price span{flex-basis:100%}
+  .inc,.inc.three,.facts,.villas,.villas.four,.meals,.day,.nabe{grid-template-columns:1fr}
+  .meal{padding:26px 22px}
+  .day-photos{position:static}
+  .daypane{margin-left:-24px;margin-right:-24px;padding:28px 24px 8px}
+  .same{grid-template-columns:1fr;gap:12px}
+  .same .tag{justify-self:start}
+  .callout{grid-template-columns:1fr;gap:14px;padding:24px 20px}
+  table.cond th,table.cond td{display:block;width:100%;padding:12px 16px}
+  table.cond th{border-bottom:0;padding-bottom:4px}
+  table.cond tr:first-child td{border-top:0}
+  .villa-wide .pics{grid-template-columns:1fr}
+  .villa-wide .pics .col{grid-template-rows:none;grid-template-columns:1fr 1fr}
+  .villa-wide .pics .col img{aspect-ratio:4/3}
+  .sticky{display:flex}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="#top" aria-label="KONA RESORT"><img src="images/logo-kona-resort-white.svg" alt="KONA RESORT"></a>
+    <a class="btn btn-line-light" href="#reserve"><span class="jp">空室を見る</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- §0 ヒーロー -->
+<section class="hero">
+  <img class="bg" src="images/hero-dusk.jpg" alt="AWAJI KAI Pool Villa のテラス。夕暮れの播磨灘とプール">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Winter 2027 · KONA RESORT</p>
+      <p class="pre">淡路島の一棟貸しヴィラ　3施設の冬季限定プラン<br>2027年1月4日〜2月26日・月〜木曜チェックイン</p>
+      <h1>
+        <span class="h1-jp">冬の平日は、<br>ゆっくり長く。</span>
+        <span class="figs">
+          <span class="f"><span class="num">24<small>HOURS</small></span><span class="who"><b>AWAJI KAI・OCEAN CLUB</b><br>チェックアウトは翌日15時</span></span>
+          <span class="sep" aria-hidden="true"></span>
+          <span class="f"><span class="num">2<small>NIGHTS</small></span><span class="who"><b>Dog Villa Holoholo</b><br>1泊分の料金で2泊</span></span>
+        </span>
+      </h1>
+      <p class="sub">サウナで温まる一棟貸しに、ふだんより長く。<br>愛犬と過ごす Holoholo は、<br class="sp">薪ストーブのそばで2泊。<br>冬の平日だけのプランです。</p>
+    </div>
+    <aside class="card" aria-label="冬季限定プランの概要">
+      <p class="k">Winter Plan</p>
+      <p class="name">冬季限定プラン</p>
+      <p class="price"><b>¥70,400</b><span>〜／1棟・税込</span></p>
+      <p class="per">KONA OCEAN CLUB COVE（4名まで）の1泊料金。Holoholo は2泊で71,500円〜（5名まで）</p>
+      <ul>
+        <li>AWAJI KAI・KONA OCEAN CLUB：チェックイン15:00 → 翌日15:00（最大24時間）。サウナドリンク・生ビール・淡路島ばぁむ付き</li>
+        <li>Dog Villa Holoholo：2泊目が0円、翌々日11:00チェックアウト。淡路島ばぁむ付き</li>
+        <li>3施設・全9棟から選べます</li>
+      </ul>
+      <a class="btn btn-gold" href="#reserve"><span class="jp">空室を見る・予約する</span></a>
+      <p class="days" data-verify="販売のない日はAWAJI KAIのみ予約カレンダー上の表示から判断（2026-10-25）。KOC・Holoholoは未確認">ご予約いただけない日は、施設ごとに異なります。</p>
+    </aside>
+  </div>
+  <p class="credit">写真：AWAJI KAI Pool Villa のテラス</p>
+</section>
+
+<!-- §1 冬季限定特典 -->
+<section class="sec sec-ivory" id="plan">
+  <div class="wrap">
+    <p class="eyebrow rise">Winter benefits</p>
+    <h2 class="h2 rise">冬季限定特典</h2>
+    <p class="lead rise">AWAJI KAI と KONA OCEAN CLUB は、チェックアウトが翌日の15時です。<br>Dog Villa Holoholo は、1泊分の料金で2泊できます。</p>
+
+    <div class="perk">
+      <div class="perk-head rise"><span class="tag">24 HOURS</span><h3><span class="nw">KONA RESORT AWAJI KAI</span>・<span class="nw">KONA OCEAN CLUB</span></h3></div>
+      <div class="inc">
+        <div class="inc-item lead-item rise">
+          <p class="no">01</p>
+          <p class="big">15:00<small>OUT</small></p>
+          <h3>チェックアウトは翌日の15時</h3>
+          <p>15時にチェックインして、翌日の15時まで。通常より4時間長く、最大24時間お過ごしいただけます。</p>
+        </div>
+        <div class="inc-item rise">
+          <p class="no">02</p>
+          <p class="big">SAUNA<small>DRINK</small></p>
+          <h3>サウナドリンク</h3>
+          <p data-verify="ドリンクの中身・本数をSUGOMoRIに確認（KAI・KOCとも）">サウナの合間の水分補給に。</p>
+        </div>
+        <div class="inc-item rise">
+          <p class="no">03</p>
+          <p class="big">BEER</p>
+          <h3>生ビール</h3>
+          <p data-verify="提供方法（サーバーか）・量をSUGOMoRIに確認（KAI・KOCとも）">サウナでととのったあと、夜のテラスで。</p>
+        </div>
+        <div class="inc-item rise">
+          <p class="no">04</p>
+          <p class="big">BAUM</p>
+          <h3>淡路島ばぁむ</h3>
+          <p data-verify="数量（1棟に1個か）をSUGOMoRIに確認（KAI・KOCとも）">淡路島のバウムクーヘン。おやつに、翌朝のコーヒーのおともに。</p>
+        </div>
+      </div>
+      <div class="same rise" data-verify="AWAJI KAIは料金表正本（20260130予約番改正）の冬・平日料金と同額を確認済み（2026-10-25）。KOCは未確認">
+        <span class="tag">料金は冬の平日料金のまま</span>
+        <p>宿泊料金は、ふだんの冬の平日（1棟1泊）と同じです。同じ料金で、滞在が4時間のび、3つの特典がつきます。</p>
+      </div>
+    </div>
+
+    <div class="perk">
+      <div class="perk-head rise"><span class="tag">2 NIGHTS</span><h3>Dog Villa Holoholo</h3></div>
+      <div class="inc three">
+        <div class="inc-item lead-item rise">
+          <p class="no">01</p>
+          <p class="big">¥0<small>2ND NIGHT</small></p>
+          <h3>2泊目の宿泊料金が0円</h3>
+          <p>1泊分の料金で、2泊できます。</p>
+        </div>
+        <div class="inc-item rise">
+          <p class="no">02</p>
+          <p class="big">11:00<small>OUT</small></p>
+          <h3>チェックアウトは翌々日の11時</h3>
+          <p>15時にチェックインして、翌々日の11時まで。愛犬とゆっくり過ごせます。</p>
+        </div>
+        <div class="inc-item rise">
+          <p class="no">03</p>
+          <p class="big">BAUM</p>
+          <h3>淡路島ばぁむ</h3>
+          <p data-verify="数量をSUGOMoRIに確認（Holoholo）">淡路島のバウムクーヘン。2日目のおやつに。</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notes rise">
+      <li>20歳未満の方の飲酒は法律で禁止されています。</li>
+      <li>飲酒後のサウナ・プール・ジャグジーのご利用はお控えください。</li>
+      <li>夕食・朝食は含まれません。夕食は下の「食事」をご覧ください。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- コンセプト帯 -->
+<section class="concept-band">
+  <div class="wrap">
+    <p class="eyebrow rise">Winter only</p>
+    <p class="jp jp-lg rise">冬のプールは、<br class="sp">水風呂になる。</p>
+    <p class="s rise" data-verify="KOCの489ban表記は「温水ではない」。「加温設備のない」と書いてよいかSUGOMoRIに確認">加温設備のないプールが、サウナのあと、<br>海を見ながら入る水風呂に。</p>
+    <p class="s rise" style="font-size:13px;margin-top:10px">プールがあるのは、AWAJI KAI の全4棟と、KONA OCEAN CLUB の BEACH・OCEAN です。</p>
+  </div>
+</section>
+
+<!-- §2 過ごし方 -->
+<section class="sec sec-white" id="day">
+  <div class="wrap">
+    <p class="eyebrow rise">How to spend</p>
+    <h2 class="h2 rise">冬の、過ごし方。</h2>
+    <p class="lead rise">サウナのある海辺のヴィラで24時間。愛犬と過ごす Holoholo で2泊。<br>どちらも、ふだんならもう帰る時間に、まだそこにいられます。</p>
+
+    <div class="daypane sea">
+    <div class="day-title rise"><span class="tag">24 HOURS</span><h3><span class="nw">AWAJI KAI</span>・<span class="nw">KONA OCEAN CLUB の24時間</span></h3></div>
+    <div class="day">
+      <div class="day-photos">
+        <figure class="rise"><img src="images/pv-sauna.jpg" alt="AWAJI KAI Pool Villa のサウナ室" loading="lazy" style="object-position:50% 60%"><figcaption>AWAJI KAI Pool Villa のサウナ</figcaption></figure>
+        <figure class="rise"><img src="images/koc-night-pool.jpg" alt="KONA OCEAN CLUB BEACH の夜のテラスとプール" loading="lazy"><figcaption>KONA OCEAN CLUB BEACH の夜のテラス</figcaption></figure>
+      </div>
+      <ol class="timeline">
+        <li class="key rise"><p class="t">15:00</p><h3>チェックイン</h3><p>セルフチェックイン（15:00〜19:00）。荷物を置いたら、まずテラスへ。</p></li>
+        <li class="rise"><p class="t">16:00</p><h3>サウナ → 水風呂 → 外気浴</h3><p>サウナのあとはシャワーで汗を流して、プールのある棟はプールを水風呂に。海を見ながら外気浴を。サウナドリンクで水分補給を。</p></li>
+        <li class="key rise"><p class="t">17:00〜</p><h3>日の入り</h3><p>AWAJI KAI では、晴れた日にはテラスの正面、播磨灘に陽が沈みます。</p></li>
+        <li class="rise"><p class="t">18:00</p><h3>お部屋で鍋</h3><p>外気浴で冷えた体に、あたたかい鍋を。食材を持ち込んで、みんなで囲みます。</p></li>
+        <li class="rise"><p class="t">20:00</p><h3>サウナのあとに、生ビール</h3><p>夜のサウナで温まったら、テラスで生ビールを。お酒を飲んだあとは、サウナとプールはお休みに。</p></li>
+        <li class="rise"><p class="t">翌 9:00</p><h3>朝はゆっくり</h3><p>淡路島ばぁむとコーヒーで、遅めの朝を。</p></li>
+        <li class="extra rise"><p class="t">翌 11:00<span class="badge">このプランだけ</span></p><h3>ふだんならチェックアウト。でも、もう一度サウナへ</h3><p>明るい海を見ながら、二日目のサウナ。お昼もお部屋で。</p></li>
+        <li class="key rise"><p class="t">翌 15:00</p><h3>チェックアウト</h3><p>帰り道は、島の海沿いをドライブしながら。</p></li>
+      </ol>
+    </div>
+
+    </div>
+
+    <div class="daypane hearth">
+    <div class="day-title rise"><span class="tag">2 NIGHTS</span><h3>Dog Villa Holoholo の2泊</h3></div>
+    <div class="day">
+      <div class="day-photos">
+        <figure class="rise"><img src="images/holo-stove.jpg" alt="Holoholo のリビングと薪ストーブ" loading="lazy"><figcaption>Holoholo の薪ストーブ</figcaption></figure>
+        <figure class="rise"><img src="images/holo-dusk.jpg" alt="夕暮れの Holoholo。明かりのともった建物と芝生の庭" loading="lazy"><figcaption>夕暮れの Holoholo</figcaption></figure>
+      </div>
+      <ol class="timeline">
+        <li class="key rise"><p class="t">1日目 15:00</p><h3>チェックイン</h3><p>セルフチェックイン（15:00〜19:00）。愛犬と一緒に、まずは庭へ。</p></li>
+        <li class="rise"><p class="t">1日目 夜</p><h3>薪ストーブのそばで</h3><p data-verify="薪の用意（無料か・量）をSUGOMoRIに確認">冬の夜は、薪ストーブの火を眺めながら。テラスの電気グリルでBBQもできます。</p></li>
+        <li class="extra rise"><p class="t">2日目<span class="badge">このプランだけ</span></p><h3>チェックアウトを気にしない一日</h3><p>朝はゆっくり起きて、淡路島ばぁむとコーヒーを。島を散歩しても、一日お部屋で過ごしても。</p></li>
+        <li class="rise"><p class="t">2日目 夜</p><h3>もう一晩、薪ストーブの夜</h3><p>2泊目の宿泊料金は0円です。</p></li>
+        <li class="key rise"><p class="t">3日目 11:00</p><h3>チェックアウト</h3><p>2泊して、お支払いは1泊分の料金です。</p></li>
+      </ol>
+    </div>
+    </div>
+
+    <ul class="notes">
+      <li>日の入りは期間中おおむね17時〜17時55分ごろ（国立天文台の神戸の値）。天候により夕陽が見られない場合があります。</li>
+      <li>プールの水温は冬はとても低くなります。心臓・血圧に不安のある方はご注意ください。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- §3 冬の淡路 -->
+<section class="sec sec-ivory" id="winter">
+  <div class="wrap">
+    <p class="eyebrow rise">Winter in Awaji</p>
+    <h2 class="h2 rise">冬の淡路は、<br>思っているより<br class="sp">過ごしやすい。</h2>
+    <div class="facts">
+      <div class="fact rise"><p class="num">1.7<small>℃</small></p><h3>真冬でも氷点下にならない</h3><p>1月・2月の日最低気温（平年値）。</p></div>
+      <div class="fact rise"><p class="num">1<small>cm</small></p><h3>雪はほとんど降らない</h3><p>1月の月合計降雪量（平年値）。</p></div>
+      <div class="fact rise"><p class="num">48.2<small>mm</small></p><h3>雨の少ない季節</h3><p>1月の降水量（平年値）。</p></div>
+      <div class="fact rise"><p class="num">17:00<small>〜</small></p><h3>日が沈むのが早い</h3><p>夕食の前に、サウナも夕暮れも楽しめます。</p></div>
+    </div>
+    <p class="note">出典：気象庁 洲本 平年値（1991〜2020年）、国立天文台 暦計算室。年によって寒波や降雪があります。強風の日は明石海峡大橋に速度規制・通行止めがかかることがあります。</p>
+  </div>
+</section>
+
+<!-- §4 施設と棟 -->
+<section class="sec sec-navy on-dark" id="villas">
+  <div class="wrap">
+    <p class="eyebrow rise">Villas</p>
+    <h2 class="h2 rise">3施設・全9棟から<br class="sp">選べます。</h2>
+    <p class="lead rise">料金はすべて1棟あたり（税込）です。人数が多いほど、1人あたりの料金は下がります。</p>
+
+    <!-- AWAJI KAI -->
+    <div class="group">
+      <div class="group-head rise"><p class="gname">KONA RESORT AWAJI KAI</p><p class="gmeta"><b>24 HOURS</b>淡路市江井・西海岸／全4棟</p></div>
+      <div class="villas">
+        <div class="villa rise">
+          <img src="images/dusk-pool.jpg" alt="Pool Villa のインフィニティプールと夕暮れの海" loading="lazy">
+          <p class="name">Pool Villa 01 · 02</p>
+          <p class="cap">定員7名／127.00㎡／3階建て</p>
+          <p class="vprice">¥103,400<span>／1棟1泊</span></p>
+          <p class="vper">7名なら1人あたり約14,800円</p>
+          <dl><dt>水まわり</dt><dd>インフィニティプール・オーシャンビューサウナ・ジャグジー</dd><dt>寝室</dt><dd>ダブルベッド4台</dd><dt>ペット</dt><dd>01は不可／02は1階のみ可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/awaji-kai/0/detail/1358095" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+        <div class="villa rise">
+          <img src="images/pv-exterior.jpg" alt="Pool Villa の外観" loading="lazy">
+          <p class="name">Pool Villa 03</p>
+          <p class="cap">定員7名／127.00㎡／3階建て</p>
+          <p class="vprice">¥107,800<span>／1棟1泊</span></p>
+          <p class="vper">7名なら1人あたり約15,400円</p>
+          <dl><dt>水まわり</dt><dd>インフィニティプール・オーシャンビューサウナ・ジャグジー</dd><dt>寝室</dt><dd>ダブルベッド4台</dd><dt>ペット</dt><dd>1階・2階のみ可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/awaji-kai/0/detail/1358095" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+        <div class="villa rise">
+          <img src="images/otw-pool.jpg" alt="On the WATER のプールとジャグジー" loading="lazy">
+          <p class="name">On the WATER</p>
+          <p class="cap">定員10名／196.69㎡／2階建て</p>
+          <p class="vprice">¥128,700<span>／1棟1泊</span></p>
+          <p class="vper">10名なら1人あたり約12,900円</p>
+          <dl><dt>水まわり</dt><dd>プライベートプール・ジャグジー・サウナ</dd><dt>寝室</dt><dd>ダブルベッド4台・シングルベッド2台</dd><dt>ペット</dt><dd>不可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/awaji-kai/0/detail/1358095" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+      </div>
+      <p class="note">プールは全棟とも加温設備がありません。On the WATER のアウトドアリビングは床暖房付きです。</p>
+    </div>
+
+    <!-- KONA OCEAN CLUB -->
+    <div class="group">
+      <div class="group-head rise"><p class="gname">KONA OCEAN CLUB</p><p class="gmeta"><b>24 HOURS</b>淡路市深草・高台／全4棟</p></div>
+      <div class="villas four">
+        <div class="villa rise">
+          <img src="images/koc-beach.jpg" alt="BEACH のテラスとプール、正面の海" loading="lazy">
+          <p class="name">BEACH</p>
+          <p class="cap">定員6名／2階建て</p>
+          <p class="vprice">¥117,700<span>／1棟1泊</span></p>
+          <p class="vper">6名なら1人あたり約19,600円</p>
+          <dl><dt>水まわり</dt><dd>プール・サウナ・ジャグジー</dd><dt>寝室</dt><dd>ダブル2台・シングル2台</dd><dt>ペット</dt><dd>可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365139" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+        <div class="villa rise">
+          <img src="images/koc-sunset.jpg" alt="SUNSET のウッドデッキとジャグジー" loading="lazy">
+          <p class="name">SUNSET</p>
+          <p class="cap">定員4名／2階建て</p>
+          <p class="vprice">¥73,700<span>／1棟1泊</span></p>
+          <p class="vper">4名なら1人あたり約18,400円</p>
+          <dl><dt>水まわり</dt><dd>サウナ・ジャグジー（プールなし）</dd><dt>寝室</dt><dd>ダブル1台・シングル2台</dd><dt>ペット</dt><dd>可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365136" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+        <div class="villa rise">
+          <img src="images/koc-cove.jpg" alt="COVE のテラスとダイニング" loading="lazy">
+          <p class="name">COVE</p>
+          <p class="cap">定員4名／2階建て</p>
+          <p class="vprice">¥70,400<span>／1棟1泊</span></p>
+          <p class="vper">4名なら1人あたり約17,600円</p>
+          <dl><dt>水まわり</dt><dd>サウナ・ジャグジー（プールなし）</dd><dt>寝室</dt><dd>ダブル1台・シングル2台</dd><dt>ペット</dt><dd>不可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365137" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+        <div class="villa rise">
+          <img src="images/koc-ocean.jpg" alt="OCEAN のプール" loading="lazy">
+          <p class="name">OCEAN</p>
+          <p class="cap">定員8名／2階建て</p>
+          <p class="vprice">¥149,600<span>／1棟1泊</span></p>
+          <p class="vper">8名なら1人あたり約18,700円</p>
+          <dl><dt>水まわり</dt><dd>プール・サウナ・ジャグジー</dd><dt>寝室</dt><dd>ダブル4台</dd><dt>ペット</dt><dd>不可</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365138" target="_blank" rel="noopener">この棟の空室を見る →</a>
+        </div>
+      </div>
+      <p class="note" data-verify="KOC各棟の冬季プラン料金はBEACHのみ詳細ページで確認。SUNSET・COVE・OCEANは棟ページの表示（2026-11-13）">プール（BEACH・OCEAN）は温水ではありません。SUNSET・COVE の浴室はシャワーのみです。</p>
+    </div>
+
+    <!-- Dog Villa Holoholo -->
+    <div class="group">
+      <div class="group-head rise"><p class="gname">Dog Villa Holoholo</p><p class="gmeta"><b>2 NIGHTS</b>淡路市尾崎／愛犬と泊まる1棟</p></div>
+      <div class="villa-wide">
+        <div class="pics rise">
+          <img class="p1" src="images/holo-fire.jpg" alt="夕暮れの Holoholo。明かりのともった建物と庭" loading="lazy">
+          <div class="col">
+            <img src="images/holo-dog-stove.jpg" alt="薪ストーブのそばでくつろぐ犬" loading="lazy">
+            <img src="images/holo-stove.jpg" alt="Holoholo のリビングの薪ストーブ" loading="lazy">
+          </div>
+        </div>
+        <div class="villa rise">
+          <p class="name">Dog Villa Holoholo</p>
+          <p class="cap">定員5名／51.00㎡</p>
+          <p class="vprice">¥71,500<span>／1棟2泊</span></p>
+          <p class="vper">5名なら1人あたり約14,300円（2泊分）</p>
+          <dl><dt>暖房</dt><dd>薪ストーブ</dd><dt>寝室</dt><dd>ダブル1台・シングル2台（5名のときは折りたたみベッド）</dd><dt>ペット</dt><dd>同伴できます</dd><dt>BBQ</dt><dd>電気グリル</dd></dl>
+          <a class="vlink js-reserve" href="https://reserve.489ban.net/client/awaji-holoholo/0/detail/1379246" target="_blank" rel="noopener">空室を見る →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- §5 食事 -->
+<section class="sec sec-white" id="meal">
+  <div class="wrap">
+    <p class="eyebrow rise">Dinner</p>
+    <h2 class="h2 rise">冬の夕食は、<br class="sp">お部屋で鍋を。</h2>
+    <p class="lead rise">サウナと外気浴のあとは、海の見えるダイニングで、みんなで鍋を囲む。<br>どの施設にもキッチンがあるので、食材を持ち込むだけで始められます。</p>
+    <div class="nabe rise">
+      <figure><img src="images/pv-kitchen.jpg" alt="AWAJI KAI Pool Villa のキッチンとダイニングテーブル" loading="lazy"><figcaption>AWAJI KAI Pool Villa のキッチンとダイニング</figcaption></figure>
+      <div class="nabe-body">
+        <p class="k">Hot pot in the villa</p>
+        <h3>AWAJI KAI のお部屋にそろっているもの</h3>
+        <ul class="kit">
+          <li>卓上IHコンロ＋鍋セット</li>
+          <li>2口IHクッキングヒーター</li>
+          <li>鍋・フライパン・包丁・まな板・ボウル</li>
+          <li>お皿・器・グラス・お箸</li>
+          <li>2ドア冷凍冷蔵庫・電子レンジ・炊飯器</li>
+        </ul>
+        <p class="note" data-verify="KOC・Holoholoの卓上コンロ・鍋セットの有無をSUGOMoRIに確認">KONA OCEAN CLUB と Holoholo にもキッチンと調理器具があります。そろっている器具は施設によって異なります。食材・調味料はお客さまでご用意ください。</p>
+      </div>
+    </div>
+    <div class="meal meal-sub rise">
+      <p class="k">Option</p>
+      <h3>テラスでBBQもできます</h3>
+      <p data-verify="BBQセットの申し込みがKOC・Holoholoでもできるか確認">全棟にBBQ用のグリルがあります（AWAJI KAI の Pool Villa と KONA OCEAN CLUB はガスグリル、On the WATER と Holoholo は電気グリル）。AWAJI KAI では、食材をご用意する「お肉と海鮮のBBQセット」（1人分6,600円・2人前から）を、ご予約画面のオプションからお申し込みいただけます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- §6 条件 -->
+<section class="sec sec-ivory" id="conditions">
+  <div class="wrap">
+    <p class="eyebrow rise">Conditions</p>
+    <h2 class="h2 rise">ご利用の条件</h2>
+
+    <div class="callout rise">
+      <div class="ic" aria-hidden="true">!</div>
+      <div>
+        <h3>AWAJI KAI・KONA OCEAN CLUB は、予約画面で「2泊」と表示されますが、1泊のプランです。</h3>
+        <p>翌日15時までご滞在いただけるよう、予約画面では2泊分のお部屋を押さえています。2泊目は0円となり、お支払いは1泊分の料金です。</p>
+      </div>
+    </div>
+    <div class="callout rise">
+      <div class="ic" aria-hidden="true">2</div>
+      <div>
+        <h3>Dog Villa Holoholo は、2泊のプランです。</h3>
+        <p>2泊目の宿泊料金が0円になり、お支払いは1泊分の料金です。チェックアウトは翌々日の11時です。</p>
+      </div>
+    </div>
+
+    <table class="cond">
+      <tr><th>ご宿泊期間</th><td>2027年1月4日（月）〜2月26日（金）<small>3施設とも、月曜〜木曜のチェックインに限ります</small></td></tr>
+      <tr><th>ご予約いただけない日</th><td data-verify="AWAJI KAIは予約カレンダー上の表示から判断（2026-10-25）。KOC・Holoholoは未確認。Holoholoは予約ページに「金・土日祝除外」とある"><span class="lbl">AWAJI KAI</span>1月11日（月・祝）／2月9日（火）〜11日（木・祝）／2月22日（月）・23日（火・祝）<span class="lbl">KONA OCEAN CLUB・Holoholo</span>予約ページのカレンダーでご確認ください。</td></tr>
+      <tr><th>チェックイン</th><td>15:00〜19:00（セルフチェックイン）<small>宿泊日の14日前に宿泊者情報入力のご案内メールが届きます。入力後、チェックインのご案内をお送りします。</small></td></tr>
+      <tr><th>チェックアウト</th><td><span class="lbl">AWAJI KAI・KONA OCEAN CLUB</span>翌日15:00<span class="lbl">Holoholo</span>翌々日11:00</td></tr>
+      <tr><th>料金（1棟・税込）</th><td><span class="lbl">AWAJI KAI（1泊）</span>Pool Villa 01・02　103,400円／Pool Villa 03　107,800円／On the WATER　128,700円<span class="lbl">KONA OCEAN CLUB（1泊）</span>BEACH　117,700円／SUNSET　73,700円／COVE　70,400円／OCEAN　149,600円<span class="lbl">Holoholo（2泊）</span>71,500円<small>料金は定員でご利用の場合の、いちばん低い料金です。日にち・人数により異なります。</small></td></tr>
+      <tr><th>含まれるもの</th><td><span class="lbl">AWAJI KAI・KONA OCEAN CLUB</span>サウナドリンク・生ビール・淡路島ばぁむ<span class="lbl">Holoholo</span>淡路島ばぁむ<small>夕食・朝食は含まれません。</small></td></tr>
+      <tr><th>お支払い</th><td>クレジットカードの事前決済のみ</td></tr>
+      <tr><th>ご予約の受付</th><td>宿泊日の180日前から3日前の23:59まで<small>変更は3日前の23:59まで、キャンセルの受付は前日の23:59まで</small></td></tr>
+      <tr><th>現地のスタッフ</th><td>非接触型の運営のため、現地にスタッフは常駐していません。</td></tr>
+    </table>
+
+    <h3 class="subhead rise">キャンセル料</h3>
+    <table class="cond" data-verify="AWAJI KAIの公式サイトの規定。KOC・Holoholoも同じ規定かSUGOMoRIに確認">
+      <tr><th>14日前〜8日前</th><td>宿泊料金の10％</td></tr>
+      <tr><th>7日前〜4日前</th><td>宿泊料金の20％</td></tr>
+      <tr><th>3日前〜前日</th><td>宿泊料金の50％</td></tr>
+      <tr><th>当日・連絡なし</th><td>宿泊料金の100％</td></tr>
+    </table>
+    <p class="note">気象庁により当地域に当日（0時〜15時）警報が発令された場合、または悪天候・災害等で当施設が営業困難と判断した場合は、キャンセル料はかかりません。</p>
+  </div>
+</section>
+
+<!-- §7 よくある質問 -->
+<section class="sec sec-white" id="faq">
+  <div class="wrap">
+    <p class="eyebrow rise">FAQ</p>
+    <h2 class="h2 rise">よくある質問</h2>
+    <div class="faq">
+      <details><summary>AWAJI KAI・KONA OCEAN CLUB の予約画面で「2泊」と表示されます。2泊分の料金ですか。</summary><p class="a">いいえ、1泊分の料金です。翌日15時までご滞在いただけるよう2泊分のお部屋を押さえているため「2泊」と表示されますが、2泊目は0円です。お見積りの合計金額でご確認いただけます。</p></details>
+      <details><summary>Holoholo のプランは、本当に2泊できますか。</summary><p class="a">はい。Holoholo の冬季限定プランは2泊のプランで、2泊目の宿泊料金が0円になります。チェックアウトは翌々日の11時です。</p></details>
+      <details><summary>ふだんのプランと何が違いますか。</summary><p class="a">AWAJI KAI・KONA OCEAN CLUB は、チェックアウトが翌日15時になり、サウナドリンク・生ビール・淡路島ばぁむがつきます。宿泊料金はふだんの冬の平日と同じです。Holoholo は、2泊目の宿泊料金が0円になり、淡路島ばぁむがつきます。</p></details>
+      <details><summary>3つの施設は、どこにありますか。</summary><p class="a">3施設とも淡路島の淡路市にあります。AWAJI KAI は淡路市江井、KONA OCEAN CLUB は淡路市深草、Dog Villa Holoholo は淡路市尾崎です。施設ごとに場所が違いますので、ご予約の際はお間違えのないようご注意ください。</p></details>
+      <details><summary>冬でもプールに入れますか。</summary><p class="a">プールがあるのは、AWAJI KAI の全4棟と、KONA OCEAN CLUB の BEACH・OCEAN です。どれも温水ではないため、冬は水温がとても低くなります。泳ぐためではなく、サウナのあとの水風呂としてお使いください。入る前にシャワーで汗を流してください。心臓や血圧に不安のある方、お酒を飲んだあとのご利用はお控えください。</p></details>
+      <details><summary>外気浴は寒くないですか。</summary><p class="a" data-verify="KOC各棟のバスローブの有無を確認（BEACHは489banに記載あり）">淡路島の1月・2月の日最低気温は平年値で1.7℃と、氷点下にはなりません。お部屋にバスローブをご用意していますので、外気浴のときに羽織ってください。</p></details>
+      <details><summary>雪で行けなくなることはありませんか。</summary><p class="a">淡路島の1月の降雪量は平年値で月1cmほどで、雪はほとんど降りません。ただし、強風の日は明石海峡大橋に速度規制や通行止めがかかることがあります。お出かけ前に交通情報をご確認ください。</p></details>
+      <details><summary>金曜日や土曜日に泊まれますか。</summary><p class="a">このプランは、3施設とも月曜〜木曜のチェックインに限ります。金曜・土曜・日曜のご宿泊は、通常のプランをご利用ください。</p></details>
+      <details><summary>夕食や朝食はついていますか。</summary><p class="a">夕食・朝食は含まれません。冬はお部屋で鍋がおすすめです。どの施設にもキッチンがありますので、食材をお持ち込みください。テラスのグリルでBBQもできます。</p></details>
+      <details><summary>ペットは連れて行けますか。</summary><p class="a">Dog Villa Holoholo は、愛犬と泊まるための施設です。AWAJI KAI は、Pool Villa 02 が1階のみ、Pool Villa 03 が1階・2階でご一緒いただけます（Pool Villa 01 と On the WATER は不可）。KONA OCEAN CLUB は、BEACH と SUNSET でご一緒いただけます（COVE と OCEAN は不可）。</p></details>
+      <details><summary>子ども連れでも大丈夫ですか。</summary><p class="a">ご利用いただけます。冬のプールは水温がとても低いので、お子さまから目を離さないようお願いします。アメニティはご予約人数分のご用意です（幼児のお子さまは定員に含まれないためご用意がありません）。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 予約 -->
+<section class="final" id="reserve">
+  <img src="images/koc-night-pool.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rise">Reservation</p>
+      <h2 class="rise">冬季限定プランのご予約</h2>
+      <p class="meta rise">2027年1月4日〜2月26日<br>月曜〜木曜のチェックイン<br>施設を選んで、空室をご確認ください。</p>
+    </div>
+    <div class="rsv">
+      <div class="rsv-item rise">
+        <p class="rk">24 HOURS</p>
+        <p class="rn">KONA RESORT AWAJI KAI</p>
+        <p class="rp">全4棟／1棟1泊 103,400円〜（税込）<br>翌日15時チェックアウト</p>
+        <div class="rbtns"><a class="btn btn-light js-reserve" href="https://reserve.489ban.net/client/awaji-kai/0/detail/1358095" target="_blank" rel="noopener"><span class="jp">空室を見る・予約する</span></a></div>
+      </div>
+      <div class="rsv-item rise">
+        <p class="rk">24 HOURS</p>
+        <p class="rn">KONA OCEAN CLUB</p>
+        <p class="rp">全4棟／1棟1泊 70,400円〜（税込）<br>翌日15時チェックアウト。棟ごとに予約ページが分かれています。</p>
+        <div class="rbtns two">
+          <a class="btn btn-light btn-sm js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365139" target="_blank" rel="noopener"><span class="jp">BEACH</span></a>
+          <a class="btn btn-light btn-sm js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365136" target="_blank" rel="noopener"><span class="jp">SUNSET</span></a>
+          <a class="btn btn-light btn-sm js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365137" target="_blank" rel="noopener"><span class="jp">COVE</span></a>
+          <a class="btn btn-light btn-sm js-reserve" href="https://reserve.489ban.net/client/kona-oc/0/detail/1365138" target="_blank" rel="noopener"><span class="jp">OCEAN</span></a>
+        </div>
+      </div>
+      <div class="rsv-item rise">
+        <p class="rk">2 NIGHTS</p>
+        <p class="rn">Dog Villa Holoholo</p>
+        <p class="rp">1棟2泊 71,500円〜（税込）<br>翌々日11時チェックアウト</p>
+        <div class="rbtns"><a class="btn btn-light js-reserve" href="https://reserve.489ban.net/client/awaji-holoholo/0/detail/1379246" target="_blank" rel="noopener"><span class="jp">空室を見る・予約する</span></a></div>
+      </div>
+    </div>
+    <p class="note">公式の予約ページ（489ban）に移動します。AWAJI KAI・KONA OCEAN CLUB は予約画面で「2泊」と表示されますが、1泊のプランです。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="images/logo-kona-resort-white.svg" alt="KONA RESORT">
+    </div>
+    <div class="addr">
+      <b>KONA RESORT AWAJI KAI</b>　兵庫県淡路市江井2134<br>
+      <b>KONA OCEAN CLUB</b>　兵庫県淡路市深草928<br>
+      <b>Dog Villa Holoholo</b>　兵庫県淡路市尾崎620<br>
+      運営：株式会社SUGOMoRI<br>
+      <a href="https://kona-resort.jp/" target="_blank" rel="noopener">KONA RESORT AWAJI KAI 公式サイト</a><br><a href="https://kona-oc.jp/" target="_blank" rel="noopener">KONA OCEAN CLUB 公式サイト</a>
+    </div>
+    <p class="copy">掲載の料金・内容は2026年11月時点のものです。変更される場合があります。<br>© KONA RESORT</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <p class="sp-l">冬季限定プラン 1棟<b>¥70,400〜</b></p>
+  <a class="btn btn-gold" href="#reserve"><span class="jp">予約する</span></a>
+</div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),sticky=document.getElementById('sticky'),fin=document.getElementById('reserve');
+  function onScroll(){
+    var y=window.scrollY,h=window.innerHeight;
+    nav.classList.toggle('scrolled',y>h*0.6);
+    // ヒーローと締めの予約欄が見えている間は固定CTAを隠す（金は1画面1回）
+    var fr=fin.getBoundingClientRect();
+    sticky.classList.toggle('show',y>h*0.9&&fr.top>h);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rise');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  // 保険：3秒後に未表示のものを出す
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},3000);
+})();
+</script>
+</body>
+</html>
