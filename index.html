@@ -6,6 +6,13 @@
 <title>冬季限定プラン｜KONA RESORT（AWAJI KAI・KONA OCEAN CLUB・Dog Villa Holoholo）</title>
 <meta name="description" content="淡路島の一棟貸しヴィラ KONA RESORT の冬季限定プラン。2027年1月4日〜2月26日の月〜木曜チェックイン。AWAJI KAI と KONA OCEAN CLUB はチェックアウト翌日15時の最大24時間、Dog Villa Holoholo は1泊分の料金で2泊。">
 <meta name="robots" content="noindex"><!-- 公開時に判断（広告専用なら残す） -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXP552VC');</script>
+<!-- End Google Tag Manager -->
 <meta property="og:title" content="冬季限定プラン｜KONA RESORT">
 <meta property="og:description" content="冬の平日だけ、ゆっくり長く。AWAJI KAI・KONA OCEAN CLUB は最大24時間、Dog Villa Holoholo は1泊分の料金で2泊。">
 <meta property="og:image" content="images/hero-dusk.jpg">
@@ -343,6 +350,10 @@ footer .copy{width:100%;font-size:11px;margin-top:20px;line-height:1.8}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXP552VC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header class="nav" id="nav">
   <div class="wrap">
@@ -801,6 +812,89 @@ footer .copy{width:100%;font-size:11px;margin-top:20px;line-height:1.8}
   <p class="sp-l">冬季限定プラン 1棟<b>¥70,400〜</b></p>
   <a class="btn btn-gold" href="#reserve"><span class="jp">予約する</span></a>
 </div>
+
+<script>
+// 計測（秋LP kona_autumn2026 と同じイベント名・同じ GTM-WXP552VC）
+(function(){
+  function sendGaEvent(name, parameters){
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push(Object.assign({event:name},parameters));
+  }
+  function sendMetaEvent(name, parameters){
+    if(typeof window.fbq==='function'){window.fbq('trackCustom',name,parameters)}
+  }
+  function sendClarityEvent(name){
+    if(typeof window.clarity==='function'){window.clarity('event',name)}
+  }
+  // 予約番のURLから施設を判定（秋LPの data-brand と同じ値）
+  var BRANDS={'awaji-kai':'kona_resort_awaji_kai','kona-oc':'kona_ocean_club','awaji-holoholo':'dog_villa_holoholo'};
+  function brandOf(href){
+    var m=/489ban\.net\/client\/([^\/]+)/.exec(href||'');
+    if(m&&BRANDS[m[1]]){return BRANDS[m[1]]}
+    if(/kona-resort\.jp/.test(href||'')){return 'kona_resort_awaji_kai'}
+    if(/kona-oc\.jp/.test(href||'')){return 'kona_ocean_club'}
+    if(/awaji-holoholo\.jp/.test(href||'')){return 'dog_villa_holoholo'}
+    return 'unknown';
+  }
+  function placementOf(el){
+    if(el.closest('#nav')){return 'header'}
+    if(el.closest('#sticky')){return 'sticky'}
+    if(el.closest('.hero')){return 'hero'}
+    if(el.closest('#reserve')){return 'final'}
+    if(el.closest('#villas')){return 'villa_card'}
+    if(el.closest('footer')){return 'footer'}
+    var s=el.closest('section[id]');
+    return s?s.id:'other';
+  }
+
+  document.addEventListener('click',function(event){
+    var a=event.target.closest('a');
+    if(!a){return}
+    var href=a.getAttribute('href')||'';
+    var placement=placementOf(a);
+    if(a.classList.contains('js-reserve')){
+      var brand=brandOf(href);
+      sendGaEvent('booking_cta_click',{brand:brand,placement:placement});
+      sendMetaEvent('BookingCtaClick',{content_name:brand,content_category:'villa',placement:placement});
+      sendClarityEvent('BookingCtaClick');
+      return;
+    }
+    if(href.charAt(0)==='#'&&a.classList.contains('btn')){
+      sendGaEvent('select_content',{content_type:'internal_cta',item_id:placement+'_'+href.slice(1),placement:placement});
+      sendClarityEvent('InternalCtaClick');
+      return;
+    }
+    if(/^https?:\/\/(kona-resort\.jp|kona-oc\.jp|awaji-holoholo\.jp)/.test(href)){
+      sendGaEvent('brand_site_link_click',{brand:brandOf(href),placement:placement});
+      sendClarityEvent('BrandSiteLinkClick');
+    }
+  });
+
+  document.querySelectorAll('.faq details').forEach(function(detail,i){
+    detail.addEventListener('toggle',function(){
+      if(!detail.open){return}
+      sendGaEvent('faq_open',{faq_id:'faq_'+(i+1)});
+      sendClarityEvent('FaqOpen');
+    });
+  });
+
+  var scrollMilestones=[25,50,75,90];
+  var trackedScrollMilestones={};
+  function trackScrollDepth(){
+    var maxScroll=document.documentElement.scrollHeight-window.innerHeight;
+    if(maxScroll<=0){return}
+    var scrollPercent=Math.floor((window.scrollY/maxScroll)*100);
+    scrollMilestones.forEach(function(milestone){
+      if(scrollPercent>=milestone&&!trackedScrollMilestones[milestone]){
+        trackedScrollMilestones[milestone]=true;
+        sendGaEvent('scroll_depth',{percent_scrolled:milestone});
+      }
+    });
+  }
+  window.addEventListener('scroll',trackScrollDepth,{passive:true});
+  trackScrollDepth();
+})();
+</script>
 
 <script>
 (function(){
